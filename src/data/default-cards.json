@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "description": "Default punch-card deck for Retro AI Workbench. token_estimate is UI-only; it is stripped from PocketBase writes.",
+  "cards": [
+    {
+      "title": "React Component Scaffold",
+      "target_model": "claude",
+      "suggested_core": "CORE-A",
+      "token_estimate": 842,
+      "prompt": "You are a senior React engineer. Scaffold a reusable data-table component with sorting, filtering, and pagination. TypeScript props, accessible markup, Tailwind styling. Output the complete component file plus a short usage example."
+    },
+    {
+      "title": "Long-Context Document Processor",
+      "target_model": "glm",
+      "suggested_core": "CORE-C",
+      "token_estimate": 1280,
+      "prompt": "Process the attached long document and produce: (1) a 5-bullet executive summary, (2) a list of action items with owners, (3) open questions. Keep the entire source in context; do not truncate."
+    },
+    {
+      "title": "Test Case Writer",
+      "target_model": "gpt",
+      "suggested_core": "CORE-B",
+      "token_estimate": 964,
+      "prompt": "Write a thorough suite of test cases for the described feature. Cover happy path, edge cases, error states, and boundary values. Format as a table: ID, description, preconditions, steps, expected result."
+    },
+    {
+      "title": "PocketBase Schema Designer",
+      "target_model": "claude",
+      "suggested_core": "CORE-A",
+      "token_estimate": 1103,
+      "prompt": "Design a PocketBase schema for a retro AI workbench app: collections, fields, relations, indexes, and view rules for public read / authenticated write. Include example JSON for each collection."
+    },
+    {
+      "title": "Code Review Auditor",
+      "target_model": "glm",
+      "suggested_core": "CORE-C",
+      "token_estimate": 756,
+      "prompt": "Audit the provided code snippet for bugs, security issues, performance problems, and style violations. Rank findings by severity and suggest concrete fixes with code."
+    }
+  ]
+}

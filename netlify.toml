@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Function passthrough FIRST (v2 function path /api/execute-card also handles this directly)
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/execute-card"
+  status = 200
+
+# SPA fallback (no force — function/static paths win)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

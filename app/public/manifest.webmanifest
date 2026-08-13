@@ -1,0 +1,19 @@
+{
+  "name": "Retro AI Workbench",
+  "short_name": "AI Workbench",
+  "description": "Punch-card style AI prompt workbench with a phosphor CRT terminal.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#2A2D32",
+  "theme_color": "#2A2D32",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
